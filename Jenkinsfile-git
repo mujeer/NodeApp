@@ -1,7 +1,7 @@
 pipeline{
        agent any
        stages{
-            stage(“Git checkout”){
+            stage('Git checkout'){
                  steps{
                       git credentialsId: 'aad6d8ab-9ad2-4a15-b149-34039e03b13c', url: 'https://github.com/mujeer/NodeApp.git' 
                  }
